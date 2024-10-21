@@ -93,7 +93,7 @@
         &:hover {
             color: $accent-color;
             transition: all .3s linear;
-            font-size: 17px;
+            transform: scale(1.1);
         }
     }
 

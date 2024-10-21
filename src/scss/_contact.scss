@@ -54,39 +54,37 @@
         }
     }
 
+    &__info-contact {
+        padding: 0 0 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            font-size: 21px;
+            line-height: 30px;
+            transition: all .3s linear;
+            
+            &:hover {
+                transition: all .3s linear;
+                color: $accent-color;
+            }
+        }
+    }
+
     &__info-tel {
-        padding: 30px 0 15px;
+        padding: 30px 0 0;
         @include separator-line;
 
         a {
             color: $main-color;
-            font-size: 21px;
-            line-height: 30px;
-
-            &:hover {
-                font-size: 22px;
-            }
         }
     }
 
     &__info-email {
-        padding: 0 0 30px;
-
         a {
             color: $regular-color;
-            font-size: 21px;
-            line-height: 30px;
         }
-    }
-
-    &__info-email, &__info-tel {
-        a {
-            transition: all .3s linear;
-            &:hover {
-                color: $accent-color;
-                transition: all .3s linear;
-            }
-        } 
     }
 
     &__info-social {
@@ -170,6 +168,7 @@
 
     &__form-btn {
         margin: 30px 0 0;
+        cursor: pointer;
     }
 }
 
@@ -184,7 +183,7 @@
 }
 
 input:invalid {
-    border: 1px solid $accent-color;
+    box-shadow: 0 0 0 1px $accent-color;
 }
 
 .input__name, .input__phone, .input__email, .textarea__message {

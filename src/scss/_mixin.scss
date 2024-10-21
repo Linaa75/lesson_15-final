@@ -17,3 +17,7 @@
 @mixin separator-line($color: $separator-color, $height: 4px) {
     border-top: $height solid $color;
 }
+
+@mixin separator-line-bottom($color: $separator-color, $height: 4px) {
+    border-bottom: $height solid $color;
+}
